@@ -157,15 +157,36 @@ b = '#{name}님 안녕하세요'
 # => "\#{name}님 안녕하세요"
 ```
 
+```ruby
+my_name = "oh chang hee"
+my_name.upcase # => "OH CHANG HEE"
+my_name # => "oh chang hee"
+my_name.upcase! # => "OH CHANG HEE"
+my_name # => "OH CHANG HEE"
+```
 
+### 11. hash
 
+- key, value 로 이루어져 있다!!!!!!!!!!!!!!!!!!!!!
 
+```ruby
+hash1 = { :key => value, key: value }
+hash2 = { key: value }
+hash3 = { "key" => value }
+```
 
+- each 반복하기
 
+- 
 
+- ```ruby
+  hash1.each do |k,v|   
+      # k, v 는 어떠한 문자로 적어도 됩니다.
+  	puts "#{k} : #{v}"
+  end  
+  ```
 
+### 12.추가정보
 
-
-
-
+- https://gist.github.com/nacyot/7624036
 
