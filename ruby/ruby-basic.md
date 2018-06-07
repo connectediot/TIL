@@ -103,5 +103,69 @@ end
   end
   ```
 
-- 
+- 기본 매개변수
+
+- ```ruby
+  def factorial(n)
+      n == 0 ? 1 : n * factorial(n-1)
+  end
+  factorial # ArgumentError: wrong number of arguments (given 0, expected 1)
+  def factorial_d(n=5)
+      n == 0 ? 1 : n * factorial_d(n-1)
+  end
+  factorial_d # 120
+  ```
+
+### 9. block
+
+```ruby
+3.times { puts "hello" }
+3.times do |asdf|
+	puts asdf # 요부분이 block입니다.
+end
+# 0 1 2 
+```
+
+```ruby
+def hihi
+	return "No block" unless block_given?
+	yield
+end  
+
+hihi # => "No block"
+hihi {puts "hihi"} # hihi
+```
+
+### 10. string
+
+```ruby
+a = "안녕하세요.\n 멋사입니다."
+#=> "안녕하세요.\n 멋사입니다."
+b = '안녕하세요. \n 멋사입니다.'              
+#=> "안녕하세요. \\n 멋사입니다."
+puts a
+#안녕하세요.
+# 멋사입니다.
+
+puts b
+#안녕하세요. \n 멋사입니다.
+
+name = "5chang2"
+a = "#{name}님 안녕하세요"                    
+# => "5chang2님 안녕하세요"
+b = '#{name}님 안녕하세요'                    
+# => "\#{name}님 안녕하세요"
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
