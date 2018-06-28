@@ -19,3 +19,15 @@
 
 - `ruby app.rb -o $IP`
 
+- 시나트라 리로더
+
+  - `gem install sinatra-contrib `
+
+  - ```ruby
+    #app.rb
+    require "sinatra"
+    require "sinatra/reloader"
+    # 아래에 코드 계속
+    ```
+
+  - 
