@@ -41,6 +41,7 @@ $("div#comments").append(a+b+c);
 4. show.html.erb파일에 ajax 결과에 따른 event handler 작성
 
 ```ruby
+//https://github.com/rails/jquery-ujs/wiki/ajax 에서 이벤트명 참고
 <script>
   $('form').on('ajax:success', function() {
     $('input[name="content"]').val('');
